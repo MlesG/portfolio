@@ -2,8 +2,8 @@
 /* Default Light Theme */
 body {
 	font-family: Arial, sans-serif;
-	background-color: #f5f5f5;
-	color: #333;
+	background-color: #e6d9cd;
+	color: #ff914d;
 	margin: 0;
 	padding: 20px;
 }
@@ -14,18 +14,28 @@ header {
 }
 
 #profile-img {
-	width: 150px;
+	width: 300px;
 	border-radius: 50%;
 }
 
+section {
+	text-align: Left;
+	margin-bottom: 30px;
+}
+#achievements img {
+	width: 250px;
+}
 button {
+	outline-color: rgb(129, 92, 48);
 	padding: 10px 20px;
 	margin-top: 10px;
 	cursor: pointer;
 }
 
+
 /* Dark Theme */
 body.dark {
-	background-color: #121212;
-	color: #f5f5f5;
+	background-color: #efeee7;
+	color: #cc7a00;
+	
 }
