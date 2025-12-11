@@ -258,9 +258,8 @@ section {
 	font-size: clamp(18px, 2vw, 30px);
 }
 
-.material-symbols-outlined{
-	font-size: clamp(20px, 2.5vw, 35px);
-	color: #8a4212;
+#contact .material-symbols-outlined {
+    color: #8a4212;
 }
 
 /* ============= Footer Styles ============= */
@@ -464,6 +463,9 @@ button {
 .dark section .p{
 	font-size: 20px;
 }
+
+.dark #contact .material-symbols-outlined {
+    color: #e9dfd5;}
 
 /* ============= Footer Styles ============= */
 
