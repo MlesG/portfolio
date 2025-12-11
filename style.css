@@ -79,18 +79,30 @@ button {
 
 header {
 	text-align: center;
+<<<<<<< Updated upstream
 	margin-bottom: 30px;
 	padding: 40vh 20px;
+=======
+	font-size: 75px;
+	margin-bottom: 30px;
+	padding: 200px;
+>>>>>>> Stashed changes
 	background-color: #edceb9;
 }
 
 header h1 {
+<<<<<<< Updated upstream
     font-size: 90px;
 	position: relative;
 	margin: 0 auto;
 	color: #a95a29;
 	width: max-content;
 	max-width: 90%;
+=======
+	position: relative;
+	color: #a95a29;
+	width: max-content;
+>>>>>>> Stashed changes
 	padding-bottom: 0px;
 	object-fit: contain;
 }
@@ -165,7 +177,10 @@ section {
 	text-align: center;
 	font-size: 80px;
 	margin-bottom: 20px;
+<<<<<<< Updated upstream
 	color: #a95a29;
+=======
+>>>>>>> Stashed changes
 }
 
 #certifications img {
@@ -180,8 +195,11 @@ section {
 #Organizations h2{
 	text-align: right;
 	font-size: 80px;
+<<<<<<< Updated upstream
 	color: #a95a29;
 
+=======
+>>>>>>> Stashed changes
 }
 
 #Organizations li{
@@ -193,6 +211,7 @@ section {
 #projects h2{
 	text-align: center;
 	font-size: 80px;
+<<<<<<< Updated upstream
 	color: #a95a29;
 
 
@@ -262,20 +281,60 @@ section {
 	font-size: clamp(20px, 2.5vw, 35px);
 	color: #8a4212;
 }
+=======
+}
+
+.project-container{
+	display:flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.projectfirst, .projectsecond {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 20px;
+	width: 150px;
+	height: 150px;
+	font-size: 150px;
+
+	background-color: #dda47f;
+	color: #6a2e07;
+
+	border-radius: 50px;
+
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.projectfirst:hover, .projectsecond:hover {
+  color: #ccae92;
+}
+
+>>>>>>> Stashed changes
 
 /* ============= Footer Styles ============= */
 footer{
 	text-align: center;
+<<<<<<< Updated upstream
+=======
+	font-size: 18px;
+>>>>>>> Stashed changes
 	margin-top: 30px;
 	padding: 20px;
 	background-color: #d2ae96;
 }
 
+<<<<<<< Updated upstream
 footer h2, p{
 	color: #8a4212;;
 }
 
 
+=======
+>>>>>>> Stashed changes
 
 
 /* ================ colors ================ */
@@ -297,8 +356,11 @@ button {
 	cursor: pointer;
 }
 
+<<<<<<< Updated upstream
 /* ============= nav ============= */
 
+=======
+>>>>>>> Stashed changes
 .dark .nav{
   background-color: #532902;
   padding: 20px;
@@ -312,6 +374,7 @@ button {
   position: sticky;
 }
 
+<<<<<<< Updated upstream
 .dark .nav a:after{
 	content: '';
 	position:absolute;
@@ -330,11 +393,15 @@ button {
 .dark .nav a:hover:after{
 	width: 100%;
 }
+=======
+
+>>>>>>> Stashed changes
 
 .dark .home, .dark .about, .dark .certifications, .dark .Organizations, .dark .projects, .dark .contact {
 	color: #d5d4ab;
 }
 
+<<<<<<< Updated upstream
 /* ============= Header Section ============= */
 
 .dark header{ /*header bg color*/
@@ -368,6 +435,8 @@ button {
 	left: 0;
 	transition: 100ms;
 }
+=======
+>>>>>>> Stashed changes
 
 
 .dark header h1::after{ /*greeting underline*/
@@ -393,7 +462,17 @@ button {
 	padding: 20px;
 }
 
+<<<<<<< Updated upstream
 
+=======
+.dark header { /*header bg color*/
+	text-align: center;
+	font-size: 75px;
+	margin-bottom: 30px;
+	padding: 200px;
+	background-color: #622e0b;
+}
+>>>>>>> Stashed changes
 
 .dark header h1{
 	color: #fffdaf;
@@ -405,6 +484,7 @@ button {
 }
 
 
+<<<<<<< Updated upstream
 /* ============= Body Section ============= */
 
 .dark section {
@@ -414,12 +494,18 @@ button {
 	border-radius: 25px;
 }
 
+=======
+>>>>>>> Stashed changes
 .dark #theme-toggle {
 	padding: 0;
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
+<<<<<<< Updated upstream
 	background-color: #160a01;
+=======
+	background-color: #612a05;
+>>>>>>> Stashed changes
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -435,15 +521,21 @@ button {
 	border-radius: 25px;
 }
 
+<<<<<<< Updated upstream
 .dark #about h1, .dark #certifications h2, .dark #Organizations h2, .dark #projects h2, .dark #contact h2{
 	color: #fffdaf;
 }
 
+=======
+.dark #about h1, #certifications h2, .dark #Organizations h2, .dark #projects h2 {
+color: #fffdaf}
+>>>>>>> Stashed changes
 
 .dark #about p, .dark #Organizations li, #projects li a{
 	color: #fff8dc;
 }
 
+<<<<<<< Updated upstream
 .dark #Organizations h2{
 	text-align: right;
 	font-size: 80px;
@@ -461,10 +553,25 @@ button {
 }
 
 
+=======
+.dark #Organizations h2 {
+	display:flex;
+	align-items: flex-start;
+	gap: 10px;
+	flex-wrap: wrap;	
+	font-size: 60px;
+
+}.dark #Organizations li{
+	flex: 1;
+	font-size: 30px;
+}
+
+>>>>>>> Stashed changes
 .dark section .p{
 	font-size: 20px;
 }
 
+<<<<<<< Updated upstream
 /* ============= Footer Styles ============= */
 
 .dark footer h2{
@@ -479,3 +586,10 @@ button {
 	background-color: #582d05;
 }
 
+=======
+
+
+.dark footer{
+	background-color: #582d05;
+}
+>>>>>>> Stashed changes
