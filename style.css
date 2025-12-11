@@ -79,16 +79,18 @@ button {
 
 header {
 	text-align: center;
-	font-size: 75px;
 	margin-bottom: 30px;
-	padding: 200px;
+	padding: 40vh 20px;
 	background-color: #edceb9;
 }
 
 header h1 {
+    font-size: 90px;
 	position: relative;
+	margin: 0 auto;
 	color: #a95a29;
 	width: max-content;
+	max-width: 90%;
 	padding-bottom: 0px;
 	object-fit: contain;
 }
@@ -163,6 +165,7 @@ section {
 	text-align: center;
 	font-size: 80px;
 	margin-bottom: 20px;
+	color: #a95a29;
 }
 
 #certifications img {
@@ -177,6 +180,8 @@ section {
 #Organizations h2{
 	text-align: right;
 	font-size: 80px;
+	color: #a95a29;
+
 }
 
 #Organizations li{
@@ -188,46 +193,88 @@ section {
 #projects h2{
 	text-align: center;
 	font-size: 80px;
+	color: #a95a29;
+
+
 }
 
-.project-container{
-	display:flex;
-	justify-content: center;
-	gap: 50px;
+.project-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
 }
 
-.projectfirst, .projectsecond {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-
-	margin: 20px;
-	width: 150px;
-	height: 150px;
-	font-size: 150px;
-
-	background-color: #dda47f;
-	color: #6a2e07;
-
-	border-radius: 50px;
-
-	text-decoration: none;
-	transition: 0.3s;
+.projectfirst, .projectsecond, .thirdproject {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 150px;
+  background-color: #dda47f;
+  color: #6a2e07;
+  border-radius: 20%;
+  text-decoration: none;
+  transition: 0.3s;
 }
 
-.projectfirst:hover, .projectsecond:hover {
+.projectfirst span, .projectsecond span, .thirdproject span {
+  text-decoration: none;
+  color: inherit;
+  font-size: 80px; 
+
+}
+
+#contact {
+	text-align: center;
+
+}
+
+.projectfirst:hover, .projectsecond:hover, .thirdproject:hover {
   color: #ccae92;
 }
 
+#contact{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+	gap:40px;
+}
+
+#contact h2{
+	color: #8a4212;
+    font-size: clamp(40px, 6vw, 80px);
+	text-align: left;
+}
+
+.contact-info{
+	display: flex;
+	align-items: center;
+	gap: 15px;
+}
+
+#contact p{
+	color: #8a4212;
+	font-size: clamp(18px, 2vw, 30px);
+}
+
+.material-symbols-outlined{
+	font-size: clamp(20px, 2.5vw, 35px);
+	color: #8a4212;
+}
 
 /* ============= Footer Styles ============= */
 footer{
 	text-align: center;
-	font-size: 18px;
 	margin-top: 30px;
 	padding: 20px;
 	background-color: #d2ae96;
 }
+
+footer h2, p{
+	color: #8a4212;;
+}
+
 
 
 
@@ -250,6 +297,8 @@ button {
 	cursor: pointer;
 }
 
+/* ============= nav ============= */
+
 .dark .nav{
   background-color: #532902;
   padding: 20px;
@@ -263,12 +312,62 @@ button {
   position: sticky;
 }
 
+.dark .nav a:after{
+	content: '';
+	position:absolute;
+	background-color: #fdf3ea;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -5px;
+	transition: all 0.3s;
+}
 
+.dark .nav a:hover{
+	color: #e9dfd5;
+}
+
+.dark .nav a:hover:after{
+	width: 100%;
+}
 
 .dark .home, .dark .about, .dark .certifications, .dark .Organizations, .dark .projects, .dark .contact {
 	color: #d5d4ab;
 }
 
+/* ============= Header Section ============= */
+
+.dark header{ /*header bg color*/
+	text-align: center;
+	text-align: center;
+	margin-bottom: 30px;
+	padding: 40vh 20px;
+	background-color: #622e0b;
+
+}
+
+.dark header h1 {
+    font-size: 90px;
+	position: relative;
+	margin: 0 auto;
+	color: #a95a29;
+	width: max-content;
+	max-width: 90%;
+	padding-bottom: 0px;
+	object-fit: contain;
+}
+
+
+.dark header h1::before{ /*greeting underline*/
+	content: '';
+	position: absolute;
+	background-color: #e7e0da;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	transition: 100ms;
+}
 
 
 .dark header h1::after{ /*greeting underline*/
@@ -294,13 +393,7 @@ button {
 	padding: 20px;
 }
 
-.dark header { /*header bg color*/
-	text-align: center;
-	font-size: 75px;
-	margin-bottom: 30px;
-	padding: 200px;
-	background-color: #622e0b;
-}
+
 
 .dark header h1{
 	color: #fffdaf;
@@ -312,12 +405,21 @@ button {
 }
 
 
+/* ============= Body Section ============= */
+
+.dark section {
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #edceb9;
+	border-radius: 25px;
+}
+
 .dark #theme-toggle {
 	padding: 0;
 	height: 50px;
 	width: 50px;
 	border-radius: 50%;
-	background-color: #612a05;
+	background-color: #160a01;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -333,31 +435,47 @@ button {
 	border-radius: 25px;
 }
 
-.dark #about h1, #certifications h2, .dark #Organizations h2, .dark #projects h2 {
-color: #fffdaf}
+.dark #about h1, .dark #certifications h2, .dark #Organizations h2, .dark #projects h2, .dark #contact h2{
+	color: #fffdaf;
+}
+
 
 .dark #about p, .dark #Organizations li, #projects li a{
 	color: #fff8dc;
 }
 
-.dark #Organizations h2 {
-	display:flex;
-	align-items: flex-start;
-	gap: 10px;
-	flex-wrap: wrap;	
-	font-size: 60px;
+.dark #Organizations h2{
+	text-align: right;
+	font-size: 80px;
+}
 
-}.dark #Organizations li{
+.dark #Organizations li{
 	flex: 1;
 	font-size: 30px;
+	color: #fff8dc;
 }
+
+.material-symbols-outlined{
+	font-size: clamp(20px, 2.5vw, 35px);
+	color: #edceb9;
+}
+
 
 .dark section .p{
 	font-size: 20px;
 }
 
+/* ============= Footer Styles ============= */
 
+.dark footer h2{
+	color: #e9dfd5;
+}
+
+.dark #contact p{
+	color: #e9dfd5;
+}
 
 .dark footer{
 	background-color: #582d05;
 }
+
