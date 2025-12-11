@@ -1,41 +1,363 @@
+.nav{
+  background-color: #e6d9cd;
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: center;
+  position: sticky;
+  
+}
+
+/* ============ nav link ============ */
+
+.nav a{ 
+	position: relative;
+	text-decoration: none;
+}
+
+.nav a:after{
+	content: '';
+	position:absolute;
+	background-color: #4d2907;
+	height: 3px;
+	width: 0;
+	left: 0;
+	bottom: -5px;
+	transition: all 0.3s;
+}
+
+.nav a:hover{
+	color: #4d2907;
+}
+
+.nav a:hover:after{
+	width: 100%;
+}
+
+.home, .about, .certifications, .Organizations, .projects, .contact {
+	  color: #a95a29;
+}
+
+/* ============================== Light Theme ==============================*/
+#theme-toggle {
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #edceb9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 15px;
+}
+
 
 /* Default Light Theme */
-body {
-	font-family: Arial, sans-serif;
-	background-color: #e6d9cd;
-	color: #ff914d;
+#theme-toggle body {
+	font-family: 'Times New Roman', Times, serif;
+	background-color: #4d2907;
+	color: #4d2907;
 	margin: 0;
 	padding: 20px;
 }
 
-header {
-	text-align: center;
-	margin-bottom: 30px;
+#theme-toggle ion-icon:last-child {
+	display: none;
+	color: #cc7a00;
 }
 
-#profile-img {
-	width: 300px;
-	border-radius: 50%;
-}
-
-section {
-	text-align: Left;
-	margin-bottom: 30px;
-}
-#achievements img {
-	width: 250px;
-}
 button {
-	outline-color: rgb(129, 92, 48);
-	padding: 10px 20px;
-	margin-top: 10px;
 	cursor: pointer;
 }
 
 
-/* Dark Theme */
-body.dark {
-	background-color: #efeee7;
+/* ============= Header Section ============= */
+
+header {
+	text-align: center;
+	font-size: 75px;
+	margin-bottom: 30px;
+	padding: 200px;
+	background-color: #edceb9;
+}
+
+header h1 {
+	position: relative;
+	color: #a95a29;
+	width: max-content;
+	padding-bottom: 0px;
+	object-fit: contain;
+}
+
+
+header h1::before{
+	content: '';
+	position: absolute;
+	background-color: #4d2907;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	transition: 100ms;
+}
+
+header h1::after{
+	content: '';
+	position: absolute;
+	background-color: #834a15;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	transition: 100ms;
+}
+
+header h1:hover::after{
+	width: 50px;
+}
+
+/* ============= About Section ============= */
+
+#about h1 {
+  font-size: 80px; 
+  color: #a95a29;
+  margin-bottom: 80px;
+}
+
+.about-content{
+	display:flex;
+	align-items: flex-start;
+	gap: 20px;
+	flex-wrap: wrap;
+}
+
+#profile-img{
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	border-radius: 30%;
+	object-fit: contain;
+}
+
+#about p{
+	flex:1;
+	font-size:30px;
+	color:#612a05;
+
+}
+
+ /* ============= Section Styles ============= */
+
+section {
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #edceb9;
+	border-radius: 25px;
+}
+
+#certifications h2{
+	text-align: center;
+	font-size: 80px;
+	margin-bottom: 20px;
+}
+
+#certifications img {
+	width: 100%;
+	max-width: 800px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	object-fit: contain;
+}
+
+#Organizations h2{
+	text-align: right;
+	font-size: 80px;
+}
+
+#Organizations li{
+	flex: 1;
+	font-size: 30px;
+	color:#612a05;
+}
+
+#projects h2{
+	text-align: center;
+	font-size: 80px;
+}
+
+.project-container{
+	display:flex;
+	justify-content: center;
+	gap: 50px;
+}
+
+.projectfirst, .projectsecond {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	margin: 20px;
+	width: 150px;
+	height: 150px;
+	font-size: 150px;
+
+	background-color: #dda47f;
+	color: #6a2e07;
+
+	border-radius: 50px;
+
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+.projectfirst:hover, .projectsecond:hover {
+  color: #ccae92;
+}
+
+
+/* ============= Footer Styles ============= */
+footer{
+	text-align: center;
+	font-size: 18px;
+	margin-top: 30px;
+	padding: 20px;
+	background-color: #d2ae96;
+}
+
+
+
+/* ================ colors ================ */
+
+
+/* ============================== Dark Theme ==============================*/
+.dark #theme-toggle ion-icon:first-child {
 	color: #cc7a00;
-	
+	display: none
+}
+
+.dark #theme-toggle ion-icon:last-child {
+	display: block;
+	color: #cc7a00;
+}
+
+
+button {
+	cursor: pointer;
+}
+
+.dark .nav{
+  background-color: #532902;
+  padding: 20px;
+  overflow: hidden;
+  text-align: center;
+  font-size: 18px;
+  word-spacing: 30px;
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  margin: center;
+  position: sticky;
+}
+
+
+
+.dark .home, .dark .about, .dark .certifications, .dark .Organizations, .dark .projects, .dark .contact {
+	color: #d5d4ab;
+}
+
+
+
+.dark header h1::after{ /*greeting underline*/
+	content: '';
+	position: absolute;
+	background-color: #fffdaf;
+	width: 100%;
+	height: 5px;
+	bottom: 0;
+	left: 0;
+	transition: 100ms;
+}
+
+.dark header h1:hover::after{
+	width: 50px;
+}
+
+
+.dark{ /*body bg color*/
+	background-color: #6a2e07;
+	font-family: 'Times New Roman', Times, serif;
+	margin: 0;
+	padding: 20px;
+}
+
+.dark header { /*header bg color*/
+	text-align: center;
+	font-size: 75px;
+	margin-bottom: 30px;
+	padding: 200px;
+	background-color: #622e0b;
+}
+
+.dark header h1{
+	color: #fffdaf;
+}
+
+
+.dark a:hover{ /*link projs*/
+	color: #f0e1d8;
+}
+
+
+.dark #theme-toggle {
+	padding: 0;
+	height: 50px;
+	width: 50px;
+	border-radius: 50%;
+	background-color: #612a05;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 15px;
+}
+
+
+.dark section {
+	margin-bottom: 30px;
+	padding: 20px;
+	background-color: #622e0b;
+	border-radius: 25px;
+}
+
+.dark #about h1, #certifications h2, .dark #Organizations h2, .dark #projects h2 {
+color: #fffdaf}
+
+.dark #about p, .dark #Organizations li, #projects li a{
+	color: #fff8dc;
+}
+
+.dark #Organizations h2 {
+	display:flex;
+	align-items: flex-start;
+	gap: 10px;
+	flex-wrap: wrap;	
+	font-size: 60px;
+
+}.dark #Organizations li{
+	flex: 1;
+	font-size: 30px;
+}
+
+.dark section .p{
+	font-size: 20px;
+}
+
+
+
+.dark footer{
+	background-color: #582d05;
 }
