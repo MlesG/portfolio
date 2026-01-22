@@ -8,7 +8,6 @@
   font-family: 'Poppins', sans-serif;
   margin: center;
   position: sticky;
-  
 }
 
 /* ============ nav link ============ */
@@ -56,10 +55,12 @@
 }
 
 
+
+
 /* Default Light Theme */
 #theme-toggle body {
 	font-family: 'Times New Roman', Times, serif;
-	background-color: #4d2907;
+	background-color: #edceb9;
 	color: #4d2907;
 	margin: 0;
 	padding: 20px;
