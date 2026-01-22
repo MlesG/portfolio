@@ -204,7 +204,7 @@ section {
   gap: 40px;
 }
 
-.projectfirst, .projectsecond, .thirdproject {
+.projectfirst, .projectsecond, .thirdproject, .projectfourth {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -217,7 +217,7 @@ section {
   transition: 0.3s;
 }
 
-.projectfirst span, .projectsecond span, .thirdproject span {
+.projectfirst span, .projectsecond span, .thirdproject span, .projectfourth span {
   text-decoration: none;
   color: inherit;
   font-size: 80px; 
@@ -229,7 +229,7 @@ section {
 
 }
 
-.projectfirst:hover, .projectsecond:hover, .thirdproject:hover {
+.projectfirst:hover, .projectsecond:hover, .thirdproject:hover, .projectfourth:hover {
   color: #ccae92;
 }
 
